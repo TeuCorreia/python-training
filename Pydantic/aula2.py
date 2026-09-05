@@ -2,18 +2,19 @@
 
 from pydantic import BaseModel, field_validator
 
-#Validade de campos -> field_validator
+#Validade de campos simples -> field_validator
 
 class Person(BaseModel):
-    name: str
+    f_name: str
+    f_second_name: str
     age: int
 
     #Valida o campo name, que verifica se o nome contém apenas letras
-    @field_validator("name")
+    @field_validator("f_name", "f_second_name")
     def check_name_is_alpha(n):
         if not n.isalpha():
-            raise ValueError("Mensagem Personalizada que irá aparecer no console")
-        return n
+            raise ValueError(f"{n} não é um nome válido!")
+        return n.title()
 
     @field_validator("age")
     def check_age_is_positive(n):
@@ -21,5 +22,5 @@ class Person(BaseModel):
             raise ValueError(f"Idade errada!!!... {n}")
         return n
 
-jhon = Person(name="Jhon", age=30)
+jhon = Person(f_name="jhon", f_second_name="doe", age=30)
 print(jhon)
