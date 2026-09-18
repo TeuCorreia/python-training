@@ -1,3 +1,4 @@
+#Busca binaria existe ou não?
 def busca_binaria_existe(lista, alvo):
     inicio = 0
     fim = len(lista) - 1

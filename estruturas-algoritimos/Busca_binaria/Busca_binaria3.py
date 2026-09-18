@@ -1,3 +1,4 @@
+#Busca binaria de contagem de passos até encontrar o resultado
 def busca_binaria(lista,alvo):
     esquerda = 0
     direita = len(lista) -1
@@ -15,6 +16,6 @@ def busca_binaria(lista,alvo):
     return passos
 
 numeros = [1,2,3,4,5,6,7,8,9]
-resultado = (busca_binaria(numeros,6))
+resultado = (busca_binaria(numeros,5))
 
 print(resultado)

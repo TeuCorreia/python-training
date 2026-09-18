@@ -1,3 +1,4 @@
+#Busca linear para descobrir maior numero da lista
 def encontrar_maior(lista):
     maior = lista[0]
     for numero in lista:

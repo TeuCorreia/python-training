@@ -1,3 +1,4 @@
+#Busca binaria tradicional
 def busca_binaria(lista,alvo):
     esquerda = 0
     direita = len(lista) -1

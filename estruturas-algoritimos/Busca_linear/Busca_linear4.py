@@ -1,3 +1,4 @@
+#Busca linear que retorna a ultima vez que o alvo foi encontrado
 def busca_linear_ultima_posicao(lista, alvo):
     ultima_posicao = -1
     for i in range(len(lista)):

@@ -1,3 +1,4 @@
+#Busca linear tradicional
 def busca_linear(lista, alvo):
     #cria a sequência de elementos e percorre a lista
     for i in range(len(lista)):

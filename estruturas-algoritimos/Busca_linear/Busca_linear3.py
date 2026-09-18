@@ -1,3 +1,4 @@
+#Busca linear para descobrir quantas vezes foi realizado a contagem de elementos
 def contar_elementos(lista, alvo):
     contador = 0
     for elemento in lista:
