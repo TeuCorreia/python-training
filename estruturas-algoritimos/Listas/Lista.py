@@ -22,7 +22,4 @@ class Fila:
     def tamanho(self):
         return len(self.itens)
 
-    def espiar(self):
-        if self.esta_vazia():
-            return None
-        return self.itens[0]
+    
