@@ -22,4 +22,7 @@ class Fila:
     def tamanho(self):
         return len(self.itens)
 
-    
+    if __name__ == "__main__":
+
+        minha_fila = Fila()
+        print("Fila iniciada. Está vazia?", minha_fila.esta_vazia())
