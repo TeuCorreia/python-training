@@ -1,0 +1,13 @@
+app:
+  name: Sensor Monitor
+  version: "2.1"
+  user_details:
+    name: James
+    role: software development
+  release_details:
+    version: v.1.1.1
+    deployed_to_production: true
+
+  
+bungas:
+  name: lungas
