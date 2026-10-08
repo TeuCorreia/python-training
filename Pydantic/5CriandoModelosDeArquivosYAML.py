@@ -7,10 +7,15 @@ class UserDetails(BaseModel):
     name: str
     role: str
 
+class ReleaseDetails(BaseModel):
+    version: str
+    deployed_to_production: bool
+
 class App(BaseModel):
     name: str
     version: float
     user_details: UserDetails
+    release_details:ReleaseDetails
 
     @field_validator("name")
     def check_name(name):
