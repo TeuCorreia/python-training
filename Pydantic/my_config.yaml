@@ -5,8 +5,8 @@ app:
     name: James
     role: software development
   release_details:
-    version: v.1.1.1
-    deployed_to_production: true
+    version: v.1.1.1b2
+    deployed_to_production: false
 
   
 bungas:
